@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+}
+html {
+  background-color: #efefef;
+}
+
+header {
+  width: 100%;
+  background-color: #404040;
+}
+
+header .container {
+  display: flex;
+  max-width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+img {
+  max-width: 100%;
+  max-height: 190px;
+}
+
+.top-image {
+  width: 50%;
+}
+
+.top-text-portion {
+  width: 50%;
+  font-size: 120%;
+  color: aliceblue;
+}
+
+.button-header {
+  background-color: #4b99d4;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.the-blue-banner {
+  height: 50px;
+  width: 80%;
+  background-color: #3f90ce;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.button-banner {
+  background-color: white;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+  margin-right: 30%;
+}
+
+/* ******************MAIN STARTS******************** */
+
+main {
+  width: 80%;
+  margin: 0 10%;
+  background-color: #efefef;
+}
+.first-container {
+  display: flex;
+  margin: 20px;
+}
+
+.button-first-container {
+  background-color: #4b99d4;
+  height: 30px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.second-container{
+    display: flex;
+}
+
+.third-container{
+    display: flex;
+}
+
+.column{
+  height: auto;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.box{
+  background-color: white;
+  height: auto;
+  margin: 5px;
+
+}
+/* ################# Fourth conatiner starts ################ */
+.fourth-container{
+
+  height: auto;
+  width: 100%;
+  background-color: #404040;
+  display: flex;
+}
+
+.fc b{
+  color: white;
+  
+}
