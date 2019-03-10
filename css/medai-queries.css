@@ -18,9 +18,10 @@
         height: 100px;
         margin: 5px auto;
     }
-
+    
     .top-text-portion{
         font-size: 100%;
+        margin: 5px auto;
     }
 
     .the-blue-banner{
@@ -39,7 +40,8 @@
     }
     
     .first-container .frst{ 
-        width: 50vw;
+        width: 80vw;
+        margin: 5px auto;
         
     }
     
@@ -47,13 +49,15 @@
         width: 100vw;
         display: flex;
         flex-flow: column wrap; 
-        
+        margin: 0 auto;
     }
     
     .third-container{
         width: 100vw;
         display: flex;
         flex-flow: column wrap; 
+        margin: 0 auto;
+
         
     }
     
@@ -62,9 +66,15 @@
         display: flex;
         flex-flow: column wrap; 
     }
+
+    .footer-container{
+        display: flex;
+        flex-flow: column wrap;
+    }
     
     footer{
         width: 100vw;
+        height: auto;
 
     }
   
