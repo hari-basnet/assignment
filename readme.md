@@ -1,4 +1,4 @@
-#An assignment for the given layout of a website 
+# An assignment for the given layout of a website 
 
-#live
+# live
 [GitHub](https://haribasnet0.github.io/assignment/)
