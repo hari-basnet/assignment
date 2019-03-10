@@ -1,8 +1,14 @@
 
 @media only screen and (max-width: 600px){
 
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
     body{
-        width: 100vw;
+        width: 100%;
     }
     .container{
         height: 40vh;
@@ -23,6 +29,7 @@
 
     main{
         width: 100vw;
+        margin: 0;
     }
 
     .first-container{
@@ -30,10 +37,34 @@
         display: flex;
         flex-flow: column wrap;
     }
-
-    .first-container .frst{
-
-        width: 100%;
+    
+    .first-container .frst{ 
+        width: 50vw;
+        
+    }
+    
+    .second-container{
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap; 
+        
+    }
+    
+    .third-container{
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap; 
+        
+    }
+    
+    .fourth-container-sub{
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap; 
+    }
+    
+    footer{
+        width: 100vw;
 
     }
   
