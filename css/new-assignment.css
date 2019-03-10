@@ -4,7 +4,7 @@
 html {
   background-color: #efefef;
 }
-
+/* ###################### HEADER STARTS ##################### */
 header {
   height: auto;
   background-color: #404040;
@@ -42,6 +42,7 @@ header .container {
   height: 30px;
   border: 0;
   border-radius: 5px;
+  color: white;
 }
 
 .the-blue-banner {
@@ -97,14 +98,14 @@ main {
   justify-content: space-around;
 }
 
-.icon-class{
+.icon-class {
   height: 80px;
   width: 80px;
   font-size: 230%;
   color: white;
   border: 20px solid transparent;
   border-radius: 50%;
-  background: radial-gradient(#545253, #424242, #3F3F3F);
+  background: radial-gradient(#545253, #424242, #3f3f3f);
 }
 .frst {
   display: flex;
@@ -113,14 +114,16 @@ main {
   flex-basis: 21%;
   flex-flow: column wrap;
   align-items: center;
-   
-  
+
   text-align: center;
   position: relative;
 }
 
 .frst:hover {
   background-color: white;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
 }
 .frst:hover:before {
   content: "";
@@ -158,9 +161,8 @@ main {
   transform: rotateY(180deg);
 }
 
-/* ********************** second container *********************** */
+/* ********************** second container starts *********************** */
 .second-container {
-
   display: flex;
   justify-content: space-between;
   margin: 20px 0 20px 0;
@@ -169,6 +171,9 @@ main {
   background: white;
   flex-basis: 32%;
   position: relative;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
 }
 
 .scnd-text-item {
@@ -200,6 +205,7 @@ main {
 .column {
   display: flex;
   flex-direction: column;
+  min-height: 516px;
   flex-basis: 32%;
 }
 .box-one,
@@ -210,12 +216,18 @@ main {
 }
 
 .column-three {
-  max-width: 800px;
+  flex-wrap: wrap;
+  overflow: hidden;
+  margin: 25px 0 25px 0;
+
 }
 .box {
   background-color: white;
   margin: 25px 0 25px 0;
   padding: 25px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
 }
 .box::before {
   content: "";
@@ -228,11 +240,7 @@ main {
   left: 0;
 }
 
-.boxy-five {
-  background-color: white;
-  margin: 25px 0 25px 0;
-  padding: 25px;
-}
+
 .button-at-column {
   background-color: #4b99d4;
   height: 30px;
@@ -240,6 +248,66 @@ main {
   border-radius: 5px;
   color: white;
 }
+
+/* ##################### TABBED AREA ############################ */
+
+.tabs
+{
+	position: relative;
+  clear: both;
+  background-color: white;
+  min-height: inherit;
+
+}
+
+.tabs .tab
+{
+  float: left;
+  min-height: inherit;
+}
+
+.tabs .tab .content
+{
+	position: absolute;
+	background-color: white;
+	left: 0px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  padding: 25px;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+  box-shadow: 10px 10px 5px 0px rgba(179, 172, 179, 1);
+}
+
+.tabs .tab .content p{
+  padding-bottom: 20px;
+}
+
+.checkboxtab
+{
+	display: none;
+}
+
+.tab label
+{
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.checkboxtab:checked ~ label
+{
+  color: #ab70ff;
+  background-color: white;
+
+  
+}
+.checkboxtab:checked ~ .content
+{
+	z-index: 1;
+}
+
+/* ##################### TABBED AREA ENDS ############################ */
 
 .the-blue-banner2 {
   background-color: #3f90ce;
@@ -269,22 +337,23 @@ main {
 }
 /* ################# Fourth conatiner starts ################ */
 .fourth-container {
-  height: 400px;
-  width: 100%;
   background-color: #404040;
-  display: flex;
-  justify-content: flex-start;
 }
 .fourth-container-sub {
-  height: 300px;
+  width: 80%;
+  margin: auto;
   background-color: #404040;
   display: flex;
   justify-content: space-between;
-  padding: 40px;
-  flex-basis: 80%;  
+  padding: 20px;
+  flex-wrap: wrap;
 }
 .fc {
   flex-basis: 25%;
+  padding: 20px;
+}
+.fc p {
+  color: grey;
 }
 .fc b {
   color: white;
@@ -293,30 +362,39 @@ main {
 .square-container {
   display: flex;
   flex-flow: row wrap;
-  margin: 30px;
+  margin: 10px;
+  justify-content: space-evenly;
 }
 
 .square {
-  height: 50px;
-  width: 50px;
-  background-color: aquamarine;
-  border: 2px solid black;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  margin-bottom: 2px;
 }
 
+.fc-three hr {
+  height: 1px;
+  color: #636363;
+  background-color: #636363;
+  border: none;
+}
+
+/* *********************FOOTER STARTS************************ */
 footer {
   height: 100px;
   width: 100%;
   background-color: #343434;
 }
 
-.footer-container{
+.footer-container {
   margin: 0 20px;
   padding: 20px;
-  display: flex; 
-  justify-content: space-between; 
+  display: flex;
+  justify-content: space-between;
 }
 
-.copyright-container{
+.copyright-container {
   color: #636363;
   display: flex;
   align-items: center;
@@ -325,41 +403,38 @@ footer {
 
 .icon-container {
   display: flex;
-  justify-content: space-between;  
+  justify-content: space-between;
   flex-basis: 20%;
   font-size: 220%;
 }
 
-.icon-container i{
-  
+.icon-container i {
   position: relative;
 }
 
-.arrow-container{
+.arrow-container {
   display: flex;
   font-size: 220%;
   justify-content: flex-end;
 }
-.icon-container span{
-  position:absolute;
-  bottom:50px;
+.icon-container span {
+  position: absolute;
+  bottom: 50px;
   background-color: #555555;
-  padding: 10px;  
+  padding: 10px;
   font-size: 60%;
   display: none;
   left: 50%;
-
-
 }
-.icon-container i:hover span{
+.icon-container i:hover span {
   display: block;
 }
 
-.icon-container i:hover{
+.icon-container i:hover {
   color: aliceblue;
 }
 
-.icon-container i:hover::after  {
+.icon-container i:hover::after {
   content: "";
   height: 0;
   width: 0;
@@ -368,25 +443,23 @@ footer {
   position: absolute;
   bottom: 100%;
   left: 50%;
-
 }
 
-.arrow-container i{
+.arrow-container i {
   position: relative;
 }
 
-.arrow-container span{
-  position:absolute;
-  bottom:50px;
+.arrow-container span {
+  position: absolute;
+  bottom: 50px;
   background-color: #555555;
-  padding: 10px;  
+  padding: 10px;
   font-size: 50%;
   display: none;
   left: 0;
 }
 
-
-.arrow-container i:hover::after{
+.arrow-container i:hover::after {
   content: "";
   height: 0;
   widows: 0;
@@ -397,14 +470,11 @@ footer {
   left: 0;
 }
 
-.arrow-container i:hover span{
+.arrow-container i:hover span {
   display: inline-block;
 }
 
-.arrow-container i:hover{
+.arrow-container i:hover {
   color: white;
 }
-
-
-
 

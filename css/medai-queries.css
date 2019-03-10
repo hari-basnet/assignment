@@ -1,0 +1,40 @@
+
+@media only screen and (max-width: 600px){
+
+    body{
+        width: 100vw;
+    }
+    .container{
+        height: 40vh;
+    }
+
+    .top-image{
+        height: 100px;
+        margin: 5px auto;
+    }
+
+    .top-text-portion{
+        font-size: 100%;
+    }
+
+    .the-blue-banner{
+        height: 40px;
+    }
+
+    main{
+        width: 100vw;
+    }
+
+    .first-container{
+        width: 100vw;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    .first-container .frst{
+
+        width: 100%;
+
+    }
+  
+}
